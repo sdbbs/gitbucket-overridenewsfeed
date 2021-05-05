@@ -41,4 +41,10 @@ GitBucket plugin hooks can be seen in [PluginRegistry.scala (at 4.35.3)](https:/
 There we can see, that there are hooks for `addDashboardTab` and `getDashboardTabs`; so we can in principle change the dashboard tabs from a plugin, but it seem we cannot prepend anything else and make it first.
 There seem to be otherwise no hooks containing `activi`ties in the name in the PluginRegistry.
 
+See: [using twirl as runtime template engine](https://groups.google.com/g/play-framework/c/zopu-RXHHm4)
 
+>  I was considering an approach where I somehow used twirl to compile the templates on the fly to generate scala code and then also evaluate this scala code on the fly to create the final output.
+>
+> Generating scala code and "evaluating" it (by that, you mean compiling then executing) is certainly possible, but not very sensible.  The scala compiler is very slow - just look at a scala projects build times compared to a java app.  That said, if you're able to cache the compilation, then it's not so bad.
+
+So, the only way is to use JavaScript ...
