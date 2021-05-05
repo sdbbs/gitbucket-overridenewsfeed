@@ -1,4 +1,16 @@
-# gitbucket-overridenewsfeed-plugin
+# gitbucket-overridenewsfeed
+
+## Introduction
+
+This is not a plugin, but a demonstration of JavaScript.
+
+Open the file [`gitbucket-overridenewsfeed.js`](gitbucket-overridenewsfeed.js) in this repo, copy its contents, and then paste in your GitBucket installation settings (4.35.3 says "System Settings/Site notification (Supports HTML)", earlier versions said "System Settings/Information (Supports HTML)" or "System Settings/General Settings/Information"):
+
+![](img/gitbucket_home_override_settings.png)
+
+Then, when you return to your GitBucket installation home/landing page, you should see an extra table at the News Feed:
+
+![](img/gitbucket_home_override.png)
 
 ## Background
 
@@ -47,4 +59,4 @@ See: [using twirl as runtime template engine](https://groups.google.com/g/play-f
 >
 > Generating scala code and "evaluating" it (by that, you mean compiling then executing) is certainly possible, but not very sensible.  The scala compiler is very slow - just look at a scala projects build times compared to a java app.  That said, if you're able to cache the compilation, then it's not so bad.
 
-So, the only way is to use JavaScript ...
+So, the only immediate way (without changes to GitBucket itself) is to use JavaScript - as hinted in [customizing the main page · Issue #1136 · gitbucket/gitbucket · GitHub](https://github.com/gitbucket/gitbucket/issues/1136) ...
