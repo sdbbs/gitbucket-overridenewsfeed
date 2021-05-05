@@ -14,6 +14,8 @@ Then, when you return to your GitBucket installation home/landing page, you shou
 
 Note that since JavaScript calls to GitBucket API need to be made to retrieve the state of the repositories, it takes a second or more after the page is loaded to show the box.
 
+Also, this was tested on the fully open Herku install - because of the API calls, this example might not work for GitBucket repositories where authentication is used (the javascript example does not yet use any sort of authentication tokens).
+
 &nbsp;
 
 ## Background
