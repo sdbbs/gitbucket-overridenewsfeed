@@ -12,6 +12,10 @@ Then, when you return to your GitBucket installation home/landing page, you shou
 
 ![](img/gitbucket_home_override.png)
 
+Note that since JavaScript calls to GitBucket API need to be made to retrieve the state of the repositories, it takes a second or more after the page is loaded to show the box.
+
+&nbsp;
+
 ## Background
 
 From [customizing the main page · Issue #1136 · gitbucket/gitbucket · GitHub](https://github.com/gitbucket/gitbucket/issues/1136), there is no current way to customize the main page in GitBucket.
